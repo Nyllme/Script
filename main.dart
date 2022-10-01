@@ -1,11 +1,7 @@
-main() {
-  var aa = maps();
-}
-
-List<int> maps(List<int> arr) {
-  List newarr = [];
-  for (var vari in arr) {
-    newarr.add(vari);
-  }
-  return newarr;
+void main() {
+  var numbersByTwo = const [1, -2, 3, 42].map((number) => number * 2);
+  var raw = const [1, -2, 3, 42];
+  print('Numbers: $numbersByTwo');
+  print(raw.runtimeType);
+  print(numbersByTwo.runtimeType);
 }
